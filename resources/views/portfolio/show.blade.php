@@ -1,6 +1,4 @@
-@extends('portfolios.layout')
-
-
+@extends('adminlte::page')
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
@@ -8,7 +6,7 @@
                 <h2> Show Product</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('portfolios.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('portfolio.index') }}"> Back</a>
             </div>
         </div>
     </div>
@@ -18,13 +16,13 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Name:</strong>
-                {{ $portfolio->name }}
+                {{ $portfolio->port_titulo }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Details:</strong>
-                {{ $portfolio->detail }}
+                {{ $portfolio->port_desc }}
             </div>
         </div>
     </div>

@@ -18,6 +18,10 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email', 250);
             $table->string('password');
+            $table->string('user_thumbnail');
+            $table->string('user_facebook');
+            $table->string('user_instagram');
+            $table->string('user_whatsapp');
             $table->rememberToken();
             $table->timestamps();
         });

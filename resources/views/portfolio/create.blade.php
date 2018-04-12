@@ -1,4 +1,4 @@
-@extends('portfolio.layout')
+@extends('adminlte::page')
 
 
 @section('content')
